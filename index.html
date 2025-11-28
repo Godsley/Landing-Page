@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologia do Futuro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=80&q=60">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>TECNOLOGIA DO FUTURO</h1>
+            <p>Descubra como a inovação está moldando o mundo de amanhã.</p>
+            <a href="#conteudo" class="botao">Explorar Agora</a>
+        </div>
+
+        <img class="hero-img" src="assets/tecnologia.png" alt="Futuro">
+    </header>
+
+    <!-- SOBRE -->
+    <section id="conteudo" class="secao sobre reveal">
+        <h2>O Futuro Já Começou</h2>
+        <p>
+            Inteligência artificial, cidades inteligentes, carros autônomos e realidade aumentada estão
+            transformando profundamente a maneira como vivemos. A tecnologia do futuro não é mais uma ideia distante — é uma realidade que evolui todos os dias.
+        </p>
+        <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=1400&q=80" class="img-secao" alt="Tecnologia">
+    </section>
+
+    <!-- INOVAÇÕES -->
+    <section class="secao inovacoes reveal">
+        <h2>Inovações Transformadoras</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=800&q=80" alt="IA">
+                <h3>Inteligência Artificial</h3>
+                <p>A IA está revolucionando desde a medicina até a educação, tornando processos mais rápidos e precisos.</p>
+            </div>
+
+            <div class="card">
+                <img src="assets/robo.png" alt="Robótica Moderna">
+                <h3>Robótica Avançada</h3>
+                <p>Robôs inteligentes executam tarefas complexas, auxiliam em cirurgias e até interagem socialmente.</p>
+            </div>
+
+            <div class="card">
+                <img src="assets/vr.png" alt="Realidade Virtual e Aumentada">
+                <h3>Realidade Virtual</h3>
+                <p>A VR e AR criam novas maneiras de aprender, explorar e trabalhar, com imersão total.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FUTURO -->
+    <section class="secao futuro reveal">
+        <h2>Como Será o Amanhã?</h2>
+        <p>
+            A fusão entre homem e máquina, biotecnologia avançada e cidades totalmente conectadas prometem um futuro onde tecnologia e humanidade caminham lado a lado.
+        </p>
+        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1400&q=80" class="img-secao" alt="Cidade Futurista">
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2025 - Tecnologia do Futuro • Desenvolvido por Wesley</p>
+    </footer>
+
+    <!-- Reveal Animation JS -->
+    <script>
+        const reveals = document.querySelectorAll(".reveal");
+
+        function reveal() {
+            for (let i = 0; i < reveals.length; i++) {
+                const windowHeight = window.innerHeight;
+                const elementTop = reveals[i].getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+    </script>
+
+</body>
+</html>
