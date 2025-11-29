@@ -24,10 +24,17 @@ Acesse o site publicado:
 ## 📂 Estrutura do Projeto
 /
 ├── index.html
+
 ├── style.css
+
 ├── assets/
+
 │ ├── hero.png
+
 │ ├── card-vr.png
+
 │ ├── card-ia.png
+
 │ └── outros…
+
 └── README.md
