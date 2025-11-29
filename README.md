@@ -16,7 +16,7 @@ Acesse o site publicado:
 - **CSS3**
 - **JavaScript**
 - **Visual Studio Code**
-- **Git + GitHub** (controle de versão e hospedagem)
+- **Git + GitHub**
 - **Imagens** armazenadas em `/assets/`
 
 ---
